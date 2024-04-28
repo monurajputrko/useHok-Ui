@@ -1,0 +1,170 @@
+/*! CSS Used from: https://usehooks.com/_astro/404.4e91adfe.css */
+*,
+:before,
+:after {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: #e5e7eb;
+}
+
+:before,
+:after {
+	--tw-content: "";
+}
+
+h3 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+	font-size: 1em;
+}
+
+table {
+	text-indent: 0;
+	border-color: inherit;
+	border-collapse: collapse;
+}
+
+h3 {
+	margin: 0;
+}
+
+:disabled {
+	cursor: default;
+}
+
+*,
+:before,
+:after {
+	--tw-border-spacing-x: 0;
+	--tw-border-spacing-y: 0;
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	--tw-scroll-snap-strictness: proximity;
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+	--tw-ring-color: rgb(59 130 246 / .5);
+	--tw-ring-offset-shadow: 0 0 #0000;
+	--tw-ring-shadow: 0 0 #0000;
+	--tw-shadow: 0 0 #0000;
+	--tw-shadow-colored: 0 0 #0000;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+div,
+h3,
+code,
+table,
+tbody,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+::selection {
+	background-color: var(--pink);
+	color: var(--coal);
+}
+
+:not(pre)>code {
+	padding: .3rem .4rem;
+	background-color: var(--brand-charcoal);
+	border-radius: 3px;
+	font-size: var(--font-sm);
+	font-family: Fira Code;
+	letter-spacing: -.2px;
+}
+
+h3 {
+	font-family: var(--font-paytone);
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+/*! CSS Used from: https://usehooks.com/_astro/_hook_.f91524c9.css */
+main:where(.astro-PJ4Y3SZV) code {
+	background-color: var(--coal);
+}
+
+.reference {
+	font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+}
+
+.reference>*+* {
+	margin-top: 1.5rem;
+}
+
+.reference h3 {
+	font-size: clamp(.9rem, 2vw, 1.1rem);
+}
+
+.reference .table-container {
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	border: .07rem solid rgba(249, 244, 218, .1);
+}
+
+.reference table {
+	border-radius: .9rem;
+	font-size: clamp(1rem, 2.1vw, 1.2rem);
+}
+
+.reference h3:not(:first-child) {
+	margin-top: 2rem;
+}
+
+.reference thead {
+	background-color: #f9f4da1a;
+	font-size: var(--font-sm);
+	text-align: left;
+}
+
+.reference tr:not(:last-of-type) {
+	border-bottom: .07rem solid rgba(249, 244, 218, .1);
+}
+
+.reference td,
+.reference th {
+	padding: .5rem 1.2rem .5rem .75rem;
+}
+
+.reference td:not(:last-of-type),
+.reference th:not(:last-of-type) {
+	min-width: 10ch;
+}
+
+.reference td:last-of-type,
+.reference th:last-of-type {
+	width: 100%;
+	min-width: 300px;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+	font-family: Fira Code;
+	font-style: normal;
+	font-weight: 400;
+	src: local(""), url(https://usehooks.com/fonts/firacode-regular.woff2) format("woff2");
+}

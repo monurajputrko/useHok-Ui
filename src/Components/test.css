@@ -1,0 +1,613 @@
+/*! CSS Used from: https://usehooks.com/_astro/404.4e91adfe.css */
+*,
+:before,
+:after {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: #e5e7eb;
+}
+
+:before,
+:after {
+	--tw-content: "";
+}
+
+html {
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+	font-feature-settings: normal;
+}
+
+body {
+	margin: 0;
+	line-height: inherit;
+}
+
+h1,
+h3 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+	font-size: 1em;
+}
+
+small {
+	font-size: 80%;
+}
+
+button {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	text-transform: none;
+}
+
+button {
+	-webkit-appearance: button;
+	background-color: transparent;
+	background-image: none;
+}
+
+h1,
+h3,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+:disabled {
+	cursor: default;
+}
+
+img,
+svg {
+	display: block;
+	vertical-align: middle;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+*,
+:before,
+:after {
+	--tw-border-spacing-x: 0;
+	--tw-border-spacing-y: 0;
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	--tw-scroll-snap-strictness: proximity;
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+	--tw-ring-color: rgb(59 130 246 / .5);
+	--tw-ring-offset-shadow: 0 0 #0000;
+	--tw-ring-shadow: 0 0 #0000;
+	--tw-shadow: 0 0 #0000;
+	--tw-shadow-colored: 0 0 #0000;
+}
+
+.flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.gap-2 {
+	gap: .5rem;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+h1,
+h3,
+p,
+a,
+code,
+img,
+small,
+ul,
+li,
+footer,
+header,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+::selection {
+	background-color: var(--pink);
+	color: var(--coal);
+}
+
+:root {
+	--gray-light: #1b1d23;
+	--gray-dark: #131519;
+	--gray-darkest: #0d0f11;
+	--brand-coal: #0f0d0e;
+	--brand-charcoal: #231f20;
+	--brand-gray: #262522;
+	--brand-yellow: #fcba28;
+	--brand-pink: #f38ba3;
+	--brand-green: #0ba95b;
+	--brand-purple: #7b5ea7;
+	--brand-beige: #f9f4da;
+	--brand-blue: #12b5e5;
+	--brand-orange: #fc7428;
+	--brand-red: #ed203d;
+	--brand-white: #ffffff;
+	--gentlePeachLol: #f99157;
+	--magesticPurple: #9d7dce;
+	--red: var(--brand-red);
+	--white: var(--brand-beige);
+	--purple: var(--brand-purple);
+	--black: var(--brand-coal);
+	--blue: var(--brand-blue);
+	--pink: var(--brand-pink);
+	--gold: var(--brand-yellow);
+	--aqua: var(--brand-blue);
+	--gray: var(--brand-gray);
+	--yellow: var(--brand-yellow);
+	--green: var(--brand-green);
+	--orange: var(--brand-orange);
+	--charcoal: var(--brand-charcoal);
+	--coal: var(--brand-coal);
+	--border-dark: .12rem solid var(--charcoal);
+	--border-dark-shadow: 0 0 0 .1rem var(--charcoal);
+	--border-light: .07rem solid rgba(249, 244, 218, .5);
+	--body-padding: 2rem;
+	--body-border: 1.3rem;
+	--font-outfit: Outfit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+	--font-paytone: "Paytone One", Outfit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+	--font-lg: clamp(2rem, 8vw, 4rem);
+	--font-md: clamp(1.6rem, 4vw, 2.1rem);
+	--font-base: clamp(1.2rem, 2.5vw, 1.5rem);
+	--font-sm: clamp(.8rem, 2vw, 1rem);
+	--focus-object: 0 0 0 .2rem var(--blue), 0 0 0 .27rem var(--white);
+	--focus-text: 0 0 0 .2rem var(--charcoal), 0 0 0 .27rem var(--blue);
+	--nav-height: 4rem;
+}
+
+html {
+	font-size: 1em;
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: var(--body-padding);
+	background-color: var(--coal);
+	border: var(--body-border) solid var(--charcoal);
+	font-size: var(--font-base);
+	font-family: var(--font-outfit);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.4;
+	color: var(--white);
+}
+
+@media screen and (max-width: 700px) {
+	:root {
+		--body-padding: 1rem;
+		--body-border: .7rem;
+	}
+}
+
+:not(pre)>code {
+	padding: .3rem .4rem;
+	background-color: var(--brand-charcoal);
+	border-radius: 3px;
+	font-size: var(--font-sm);
+	font-family: Fira Code;
+	letter-spacing: -.2px;
+}
+
+h1,
+h3 {
+	font-family: var(--font-paytone);
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: var(--font-lg);
+}
+
+small {
+	font-size: var(--font-sm);
+}
+
+img {
+	height: auto;
+	display: block;
+}
+
+a {
+	transition: all .15s ease-in-out;
+}
+
+ul {
+	list-style: none;
+}
+
+.github:where(.astro-4HSJMIRU) {
+	display: inline-flex;
+	border-radius: 50%;
+}
+
+.github:where(.astro-4HSJMIRU):hover {
+	transform: scale(1.1);
+}
+
+.github:where(.astro-4HSJMIRU) img:where(.astro-4HSJMIRU) {
+	width: clamp(1.8rem, 7vw, 2.8rem);
+	display: block;
+	height: auto;
+}
+
+.main-footer:where(.astro-5JP7RTJD) {
+	width: 100%;
+	margin-top: 4rem;
+	padding: var(--body-padding);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	border-radius: .5rem;
+	border: var(--border-dark);
+	font-size: var(--font-sm);
+}
+
+nav:where(.astro-5JP7RTJD) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem 2rem;
+	text-align: center;
+}
+
+.logo:where(.astro-5JP7RTJD) {
+	width: 180px;
+}
+
+.byline:where(.astro-5JP7RTJD) {
+	margin-top: -.5rem;
+	padding: .3em .5em;
+	display: inline-block;
+	border-radius: .3em;
+	background-color: var(--charcoal);
+}
+
+.byline:where(.astro-5JP7RTJD):hover {
+	background-color: var(--yellow);
+	color: var(--charcoal);
+}
+
+nav:where(.astro-5JP7RTJD) a:where(.astro-5JP7RTJD):hover {
+	text-decoration: underline;
+}
+
+/*! CSS Used from: https://usehooks.com/_astro/index.93d72160.css */
+.ui-logo:where(.astro-TVRURPNS) {
+	display: inline-flex;
+	border-radius: 50%;
+}
+
+.ui-logo:where(.astro-TVRURPNS):hover {
+	transform: scale(1.1);
+}
+
+.ui-logo:where(.astro-TVRURPNS) img:where(.astro-TVRURPNS) {
+	width: clamp(3rem, 10vw, 4rem);
+	display: block;
+	height: auto;
+}
+
+.nav-main:where(.astro-LTBHV4OT) {
+	height: var(--nav-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero:where(.astro-IQQ5RAKT) {
+	padding: 2em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hero:where(.astro-IQQ5RAKT) h1:where(.astro-IQQ5RAKT) {
+	margin: 1.2em 0;
+	max-width: 27ch;
+	text-align: center;
+	font-family: outfit;
+	font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+	font-weight: 400;
+	text-transform: none;
+}
+
+.hero:where(.astro-IQQ5RAKT) img:where(.astro-IQQ5RAKT) {
+	width: clamp(20rem, 50vw, 30rem);
+}
+
+.hero:where(.astro-IQQ5RAKT) .install:where(.astro-IQQ5RAKT) {
+	max-width: 40rem;
+	margin: 2.5rem 0 4rem;
+}
+
+.marquee:where(.astro-IQQ5RAKT) {
+	--gap: 1rem;
+	width: calc(100% + var(--body-padding) * 2);
+	padding: .7rem 0;
+	display: flex;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	gap: var(--gap);
+}
+
+.marquee-content:where(.astro-IQQ5RAKT) {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	min-width: 100%;
+	gap: var(--gap);
+	animation: scroll 200s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+	.marquee-content:where(.astro-IQQ5RAKT) {
+		animation: none;
+	}
+}
+
+.marquee-right:where(.astro-IQQ5RAKT) .marquee-content:where(.astro-IQQ5RAKT) {
+	animation-direction: reverse;
+}
+
+.marquee-content:where(.astro-IQQ5RAKT) li:where(.astro-IQQ5RAKT) a:where(.astro-IQQ5RAKT) {
+	padding: .3rem .6rem;
+	background-color: var(--white);
+	border-radius: .3rem;
+	border: var(--border-dark);
+	box-shadow: 0 .5rem 0 -.1rem var(--yellow), 0 .55rem 0 var(--charcoal);
+	color: var(--charcoal);
+	font-size: .9rem;
+}
+
+.marquee:where(.astro-IQQ5RAKT):hover .marquee-content:where(.astro-IQQ5RAKT) {
+	animation-play-state: paused;
+}
+
+/*! CSS Used from: https://usehooks.com/_astro/_hook_.a5b546e8.css */
+.install:where(.astro-RYJLWM3K) {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: clamp(.7rem, 3vw, 2rem);
+	background-color: var(--charcoal);
+	padding: clamp(1rem, 4vw, 1.3rem) clamp(1rem, 4vw, 1.5rem);
+	border-radius: .5rem;
+}
+
+.install:where(.astro-RYJLWM3K) code:where(.astro-RYJLWM3K) {
+	margin-top: .3rem;
+	padding: 0;
+	font-size: clamp(.8rem, 3vw, 1.2rem) !important;
+}
+
+.install:where(.astro-RYJLWM3K) code:where(.astro-RYJLWM3K):before {
+	content: ">";
+	display: inline-block;
+	margin-right: .5rem;
+	color: var(--green);
+}
+
+.copy-btn:where(.astro-RYJLWM3K) {
+	padding: .2rem .4rem .2rem 1.7rem;
+	background: no-repeat url(https://usehooks.com/img/icon-copy.svg) .4rem 50% / .9rem auto;
+	border: var(--border-light);
+	border-radius: .3rem;
+	font-size: clamp(.7rem, 2vw, .9rem);
+	font-weight: 500;
+	transition: all .2s ease-in-out;
+}
+
+.copy-btn:where(.astro-RYJLWM3K):hover {
+	background-color: var(--coal);
+	color: var(--white);
+}
+
+._callout_156x5_1 a {
+	height: 100%;
+	padding: var(--body-padding);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	border: var(--border-dark);
+	border-radius: .5rem;
+	font-size: clamp(.9rem, 2vw, 1.1rem);
+	text-align: center;
+	transition: all .2s ease-in-out;
+}
+
+._callout_156x5_1 a:hover {
+	transform: scale(1.03);
+}
+
+._callout_156x5_1 img:not(.logo) {
+	max-width: 120px;
+	margin-top: calc(var(--body-padding) * -1.2);
+	margin-bottom: .5rem;
+}
+
+._callout_156x5_1 img.d20 {
+	width: 70px;
+}
+
+._callout_156x5_1 img.money {
+	width: 110px;
+}
+
+._callout_156x5_1 img.spinner,
+._callout_156x5_1 img.hot-sauce {
+	width: 80px;
+}
+
+._callout_156x5_1 img.logo {
+	max-width: 150px;
+}
+
+._hook_1wx7b_1>a {
+	height: 100%;
+	padding: var(--body-padding);
+	display: flex;
+	flex-direction: column;
+	gap: .6rem;
+	background-color: var(--charcoal);
+	border-radius: .5rem;
+	transition: transform .2s ease-in-out;
+}
+
+._hook_1wx7b_1>a:hover {
+	transform: scale(1.03);
+}
+
+._card-title_1wx7b_16 {
+	color: var(--blue);
+	text-transform: none;
+	font-family: var(--font-outfit);
+	font-size: clamp(1.1rem, 3vw, 1.4rem);
+	font-weight: 600;
+}
+
+._card-description_1wx7b_24 {
+	margin-bottom: .5rem;
+	font-size: clamp(.9rem, 2vw, 1.1rem);
+}
+
+._arrow_1wx7b_29 {
+	width: 28px;
+	aspect-ratio: 3 / 2;
+	margin-top: auto;
+	align-self: flex-end;
+	transition: all .2s ease-in-out;
+}
+
+a:hover ._arrow_1wx7b_29 {
+	transform: translate(.6rem);
+}
+
+._toggle_ynwcr_1 {
+	padding: .2rem .4rem;
+	border: var(--border-light);
+	border-radius: .3rem;
+	font-size: clamp(.7rem, 2vw, .9rem);
+	font-weight: 500;
+	transition: all .2s ease-in-out;
+}
+
+._toggle_ynwcr_1._active_ynwcr_10 {
+	background-color: var(--yellow);
+	border-color: var(--yellow);
+	color: var(--charcoal);
+	cursor: default;
+}
+
+._toggle_ynwcr_1:not(._active_ynwcr_10):hover {
+	background-color: var(--charcoal);
+}
+
+._hooks-grid_1fp8c_1 {
+	max-width: 980px;
+	margin: 2rem auto;
+}
+
+._hooks-controls_1fp8c_6 {
+	padding: 1rem var(--body-padding);
+	display: flex;
+	justify-content: flex-end;
+}
+
+._hooks-list_1fp8c_12 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: stretch;
+	gap: 1.6rem;
+}
+
+/*! CSS Used from: Embedded */
+astro-island {
+	display: contents;
+}
+
+/*! CSS Used keyframes */
+@keyframes scroll {
+	0% {
+		transform: translate(0);
+	}
+
+	to {
+		transform: translate(calc(-100% - var(--gap)));
+	}
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+	font-family: Fira Code;
+	font-style: normal;
+	font-weight: 400;
+	src: local(""), url(https://usehooks.com/fonts/firacode-regular.woff2) format("woff2");
+}
