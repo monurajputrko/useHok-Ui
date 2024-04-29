@@ -153,7 +153,7 @@ function CodeDisplay() {
           }}
           class="install astro-IQQ5RAKT astro-RYJLWM3K"
         >
-          <p>Demo Code</p>
+          <h2 style={{ textAlign: "left" }}>Demo Code</h2>
           <button
             onClick={() => copyCode(filteredArray[0].demoCode)}
             class="copy-btn astro-IQQ5RAKT astro-RYJLWM3K"
