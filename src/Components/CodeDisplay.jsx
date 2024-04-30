@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import { useParams } from "react-router-dom";
 import { Data } from "../Assets/Data";
 import { Clipboard, Settitle } from "usehoks";
+import MainSection from "./MainSection";
 
 function CodeDisplay() {
   const [bool, setBool] = useState(false);
@@ -25,6 +26,7 @@ function CodeDisplay() {
       setBool(false);
     }, 1000);
   };
+  
   const copyCode = (text) => {
     setBool1(true);
     copyToClipboard(text);
@@ -33,10 +35,19 @@ function CodeDisplay() {
     }, 1000);
   };
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Optional: smooth scroll animation
+    });
+  };
+
+  handleScrollToTop();
+
   return (
-    <>
+    <div key={filteredArray[0].id}>
       <Navbar />
-      <div
+      <div 
         style={{
           display: "flex",
           justifyContent: "center",
@@ -53,14 +64,14 @@ function CodeDisplay() {
           </h2>
           <p style={{ textAlign: "left" }}>{filteredArray[0].description}</p>
 
-          <h2 style={{ textAlign: "left" }} class="astro-IQQ5RAKT">
+          <h2 style={{ textAlign: "left" }} className="astro-IQQ5RAKT">
             Install
           </h2>
-          <div class="install astro-IQQ5RAKT astro-RYJLWM3K">
-            <code class="astro-IQQ5RAKT astro-RYJLWM3K">npm i usehoks</code>
+          <div className="install astro-IQQ5RAKT astro-RYJLWM3K">
+            <code className="astro-IQQ5RAKT astro-RYJLWM3K">npm i usehoks</code>
             <button
               onClick={() => copyClick("npm i usehoks")}
-              class="copy-btn astro-IQQ5RAKT astro-RYJLWM3K"
+              className="copy-btn astro-IQQ5RAKT astro-RYJLWM3K"
             >
               {bool ? "Copied!" : "Copy"}
             </button>
@@ -83,12 +94,12 @@ function CodeDisplay() {
           style={{
             width: "85%",
           }}
-          class="reference"
+          className="reference"
         >
           <h2 style={{ textAlign: "left" }} id="parameters">
             Parameters
           </h2>
-          <div class="table-container">
+          <div className="table-container">
             <table>
               <thead>
                 <tr>
@@ -98,9 +109,9 @@ function CodeDisplay() {
                 </tr>
               </thead>
               <tbody>
-                {filteredArray[0].input.map((e) => {
+                {filteredArray[0].input.map((e,i) => {
                   return (
-                    <tr>
+                    <tr key={i}>
                       <td>{e.name}</td>
                       <td>{e.type}</td>
                       <td>{e.description}</td>
@@ -114,7 +125,7 @@ function CodeDisplay() {
           <h2 style={{ textAlign: "left" }} id="parameters">
             Return Values
           </h2>
-          <div class="table-container">
+          <div className="table-container">
             <table>
               <thead>
                 <tr>
@@ -124,9 +135,9 @@ function CodeDisplay() {
                 </tr>
               </thead>
               <tbody>
-                {filteredArray[0].output.map((e) => {
+                {filteredArray[0].output.map((e,i) => {
                   return (
-                    <tr>
+                    <tr key={i}>
                       <td>{e.name}</td>
                       <td>{e.type}</td>
                       <td>{e.description}</td>
@@ -151,12 +162,12 @@ function CodeDisplay() {
           style={{
             width: "85%",
           }}
-          class="install astro-IQQ5RAKT astro-RYJLWM3K"
+          className="install astro-IQQ5RAKT astro-RYJLWM3K"
         >
-          <h2 style={{ textAlign: "left" }}>Demo Code</h2>
+          <p>Demo Code</p>
           <button
             onClick={() => copyCode(filteredArray[0].demoCode)}
-            class="copy-btn astro-IQQ5RAKT astro-RYJLWM3K"
+            className="copy-btn astro-IQQ5RAKT astro-RYJLWM3K"
           >
             {bool1 ? "Copied!" : "Copy"}
           </button>
@@ -179,8 +190,9 @@ function CodeDisplay() {
           </SyntaxHighlighter>
         </div>
       </div>
+      <MainSection data={Data} />
       <Footer />
-    </>
+    </div>
   );
 }
 
