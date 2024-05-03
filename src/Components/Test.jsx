@@ -1,23 +1,19 @@
 import { Geolocation } from "usehoks";
 
 const MyComponent = () => {
-  const position = Geolocation();
-  console.log(position);
+  const {longitude,latitude,locationName,map} = Geolocation();
+  
+  console.log(locationName); // Getting The Address
+  console.log(longitude); // Getting The Longitude
+  console.log(latitude); // Getting The Latitude
+  console.log(map); // Getting The Map Link
+
   return (
     <div>
-      {position.map && <a href={position.map}>Go to Location</a>}
-      
-      {/* {position.latitude && position.longitude && (
-        <p>
-          Latitude: {position.latitude}, Longitude: {position.longitude}
-        </p>
-      )}
-      {position.locationName && <p>Location Name: {position.locationName}</p>}
-      {position.map && (
-        <p>
-          <a href={position.map}>View on Map</a>
-        </p>
-      )} */}
+      <p>
+        Latitude: {latitude}, Longitude: {longitude}
+      </p>
+      <a href={map}>Go to Location</a>
     </div>
   );
 };

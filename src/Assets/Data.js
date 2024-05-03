@@ -1015,25 +1015,28 @@ export const Data = [
           "A function that can be used to get the current geolocation information. It returns an object containing latitude, longitude, location name, map URL, and error message.",
       },
     ],
-    demoCode: `import React from 'react';
-                            import { Geolocation } from './usehoks'; // Assuming you've saved the function in a file named 'geolocationUtils.js'
-                            
-                            function App() {
-                              const geolocation = Geolocation();
-                            
-                              return (
-                                <div>
-                                  <p>Latitude: {geolocation.latitude}</p>
-                                  <p>Longitude: {geolocation.longitude}</p>
-                                  <p>Location Name: {geolocation.locationName}</p>
-                                  <a href={geolocation.map} target="_blank" rel="noreferrer">View on Map</a>
-                                </div>
-                              );
-                            }
-                            
-                            export default App;
-                            
-                            `,
+    demoCode: `import { Geolocation } from "usehoks";
+
+    const MyComponent = () => {
+      const {longitude,latitude,locationName,map} = Geolocation(); Assuming you've saved the function in a file named 'Geolocation'
+      
+      console.log(locationName); // Getting The Address
+      console.log(longitude); // Getting The Longitude
+      console.log(latitude); // Getting The Latitude
+      console.log(map); // Getting The Map Link
+    
+      return (
+        <div>
+          <p>
+            Latitude: {latitude}, Longitude: {longitude}
+          </p>
+          <a href={map}>Go to Location</a>
+        </div>
+      );
+    };
+    
+    export default MyComponent;
+    `,
   },
   {
     id: "24",
@@ -2118,26 +2121,37 @@ export const Data = [
   {
     id: "46",
     title: "LongKeyPress",
-    description: "LongKeyPress is a custom React hook for detecting long key presses.",
-    mainDescription: "LongKeyPress is a custom React hook that detects when a key is pressed for a specified duration and then triggers a callback. It takes the target key, a callback function, and an optional custom delay as arguments.",
-    input: [{
-      name: "targetKey",
-      type: "string",
-      description: "The key to listen for long presses."
-    }, {
-      name: "callback",
-      type: "function",
-      description: "The callback function to be executed when the key is pressed for a long duration."
-    }, {
-      name: "customDelay",
-      type: "number",
-      description: "An optional custom delay in milliseconds for the long press duration. Default is 500 milliseconds."
-    }],
-    output: [{
-      name: "isPressing",
-      type: "boolean",
-      description: "A boolean value indicating whether the key is currently being pressed for a long duration."
-    }],
+    description:
+      "LongKeyPress is a custom React hook for detecting long key presses.",
+    mainDescription:
+      "LongKeyPress is a custom React hook that detects when a key is pressed for a specified duration and then triggers a callback. It takes the target key, a callback function, and an optional custom delay as arguments.",
+    input: [
+      {
+        name: "targetKey",
+        type: "string",
+        description: "The key to listen for long presses.",
+      },
+      {
+        name: "callback",
+        type: "function",
+        description:
+          "The callback function to be executed when the key is pressed for a long duration.",
+      },
+      {
+        name: "customDelay",
+        type: "number",
+        description:
+          "An optional custom delay in milliseconds for the long press duration. Default is 500 milliseconds.",
+      },
+    ],
+    output: [
+      {
+        name: "isPressing",
+        type: "boolean",
+        description:
+          "A boolean value indicating whether the key is currently being pressed for a long duration.",
+      },
+    ],
     demoCode: `import React from 'react';
     import { LongKeyPress } from './LongKeyPress'; // Assuming you've saved the function in a file named 'useKeyPress.js'
     
@@ -2159,5 +2173,4 @@ export const Data = [
     export default App;
     `,
   },
-  
 ];
