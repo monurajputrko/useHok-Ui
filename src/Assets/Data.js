@@ -1840,46 +1840,59 @@ export const Data = [
   {
     id: "42",
     title: "usePagination",
-    description: "usePagination is a custom React hook for managing pagination state.",
-    mainDescription: "usePagination is a custom React hook that helps manage pagination state for a list of items. It takes the total number of items and the number of items per page as input and returns the current page number, total number of pages, functions to navigate to the next and previous pages, and a function to go to a specific page. It also provides boolean values indicating whether there is a next or previous page.",
-    input: [{
-      name: "totalItems",
-      type: "number",
-      description: "The total number of items in the list."
-    }, {
-      name: "itemsPerPage",
-      type: "number",
-      description: "The number of items to display per page. Default is 10."
-    }],
-    output: [{
-      name: "currentPage",
-      type: "number",
-      description: "The current page number."
-    }, {
-      name: "totalPages",
-      type: "number",
-      description: "The total number of pages."
-    }, {
-      name: "nextPage",
-      type: "function",
-      description: "A function to go to the next page."
-    }, {
-      name: "prevPage",
-      type: "function",
-      description: "A function to go to the previous page."
-    }, {
-      name: "goToPage",
-      type: "function",
-      description: "A function to go to a specific page."
-    }, {
-      name: "hasNextPage",
-      type: "boolean",
-      description: "Indicates whether there is a next page."
-    }, {
-      name: "hasPrevPage",
-      type: "boolean",
-      description: "Indicates whether there is a previous page."
-    }],
+    description:
+      "usePagination is a custom React hook for managing pagination state.",
+    mainDescription:
+      "usePagination is a custom React hook that helps manage pagination state for a list of items. It takes the total number of items and the number of items per page as input and returns the current page number, total number of pages, functions to navigate to the next and previous pages, and a function to go to a specific page. It also provides boolean values indicating whether there is a next or previous page.",
+    input: [
+      {
+        name: "totalItems",
+        type: "number",
+        description: "The total number of items in the list.",
+      },
+      {
+        name: "itemsPerPage",
+        type: "number",
+        description: "The number of items to display per page. Default is 10.",
+      },
+    ],
+    output: [
+      {
+        name: "currentPage",
+        type: "number",
+        description: "The current page number.",
+      },
+      {
+        name: "totalPages",
+        type: "number",
+        description: "The total number of pages.",
+      },
+      {
+        name: "nextPage",
+        type: "function",
+        description: "A function to go to the next page.",
+      },
+      {
+        name: "prevPage",
+        type: "function",
+        description: "A function to go to the previous page.",
+      },
+      {
+        name: "goToPage",
+        type: "function",
+        description: "A function to go to a specific page.",
+      },
+      {
+        name: "hasNextPage",
+        type: "boolean",
+        description: "Indicates whether there is a next page.",
+      },
+      {
+        name: "hasPrevPage",
+        type: "boolean",
+        description: "Indicates whether there is a previous page.",
+      },
+    ],
     demoCode: `import React, { useState } from 'react';
     import { usePagination } from './usePagination'; // Assuming you've saved the function in a file named 'paginationUtils.js'
     
@@ -1918,21 +1931,26 @@ export const Data = [
     id: "43",
     title: "useModal",
     description: "useModal is a custom React hook for managing modal state.",
-    mainDescription: "useModal is a custom React hook that helps manage the state of a modal. It provides functions to open and close the modal, as well as a boolean value indicating whether the modal is currently open.",
+    mainDescription:
+      "useModal is a custom React hook that helps manage the state of a modal. It provides functions to open and close the modal, as well as a boolean value indicating whether the modal is currently open.",
     input: [{}],
-    output: [{
-      name: "isOpen",
-      type: "boolean",
-      description: "Indicates whether the modal is open."
-    }, {
-      name: "openModal",
-      type: "function",
-      description: "A function to open the modal."
-    }, {
-      name: "closeModal",
-      type: "function",
-      description: "A function to close the modal."
-    }],
+    output: [
+      {
+        name: "isOpen",
+        type: "boolean",
+        description: "Indicates whether the modal is open.",
+      },
+      {
+        name: "openModal",
+        type: "function",
+        description: "A function to open the modal.",
+      },
+      {
+        name: "closeModal",
+        type: "function",
+        description: "A function to close the modal.",
+      },
+    ],
     demoCode: `import React from 'react';
     import { useModal } from './useModal'; // Assuming you've saved the function in a file named 'modalUtils.js'
     
@@ -1960,38 +1978,52 @@ export const Data = [
   {
     id: "44",
     title: "useCountdown",
-    description: "useCountdown is a custom React hook for creating countdown timers.",
-    mainDescription: "useCountdown is a custom React hook that creates a countdown timer based on a target date and time. It calculates the time left until the target date and time and updates the time left every second.",
-    input: [{
-      name: "initialDate",
-      type: "Date",
-      description: "The initial target date for the countdown timer."
-    }, {
-      name: "initialTime",
-      type: "string",
-      description: "The initial target time for the countdown timer in 'HH:mm' format."
-    }],
-    output: [{
-      name: "targetDate",
-      type: "Date",
-      description: "The target date for the countdown timer."
-    }, {
-      name: "setTargetDate",
-      type: "function",
-      description: "A function to update the target date."
-    }, {
-      name: "targetTime",
-      type: "string",
-      description: "The target time for the countdown timer in 'HH:mm' format."
-    }, {
-      name: "setTargetTime",
-      type: "function",
-      description: "A function to update the target time."
-    }, {
-      name: "timeLeft",
-      type: "object",
-      description: "An object containing the time left until the target date and time, with properties for years, days, hours, minutes, seconds, and milliseconds."
-    }],
+    description:
+      "useCountdown is a custom React hook for creating countdown timers.",
+    mainDescription:
+      "useCountdown is a custom React hook that creates a countdown timer based on a target date and time. It calculates the time left until the target date and time and updates the time left every second.",
+    input: [
+      {
+        name: "initialDate",
+        type: "Date",
+        description: "The initial target date for the countdown timer.",
+      },
+      {
+        name: "initialTime",
+        type: "string",
+        description:
+          "The initial target time for the countdown timer in 'HH:mm' format.",
+      },
+    ],
+    output: [
+      {
+        name: "targetDate",
+        type: "Date",
+        description: "The target date for the countdown timer.",
+      },
+      {
+        name: "setTargetDate",
+        type: "function",
+        description: "A function to update the target date.",
+      },
+      {
+        name: "targetTime",
+        type: "string",
+        description:
+          "The target time for the countdown timer in 'HH:mm' format.",
+      },
+      {
+        name: "setTargetTime",
+        type: "function",
+        description: "A function to update the target time.",
+      },
+      {
+        name: "timeLeft",
+        type: "object",
+        description:
+          "An object containing the time left until the target date and time, with properties for years, days, hours, minutes, seconds, and milliseconds.",
+      },
+    ],
     demoCode: `import React, { useState } from 'react';
     import { useCountdown } from './useCountdown'; // Assuming you've saved the function in a file named 'countdownUtils.js'
     
@@ -2029,7 +2061,103 @@ export const Data = [
     
     export default CountdownTimer;
     `,
-  }
+  },
+  {
+    id: "45",
+    title: "getFormValues",
+    description:
+      "getFormValues is a custom React hook for getting values from form inputs.",
+    mainDescription:
+      "getFormValues is a custom React hook that provides a way to get values from form inputs using a ref to the form element. It returns the form ref and a function to get the form values as an object.",
+    input: [],
+    output: [
+      {
+        name: "formRef",
+        type: "RefObject",
+        description:
+          "A ref object that should be attached to the form element.",
+      },
+      {
+        name: "getValues",
+        type: "function",
+        description: "A function that returns the form values as an object.",
+      },
+    ],
+    demoCode: `import React, { useRef } from 'react';
+    import { getFormValues } from './usehoks'; // Assuming you've saved the function in a file named 'formUtils.js'
+    
+    function FormComponent() {
+      const { formRef, getValues } = getFormValues();
+    
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        const values = getValues();
+        console.log('Form values:', values);
+      };
+    
+      return (
+        <form ref={formRef} onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <br />
+          <label>
+            Email:
+            <input type="email" name="email" />
+          </label>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      );
+    }
+    
+    export default FormComponent;
+    `,
+  },
+  {
+    id: "46",
+    title: "LongKeyPress",
+    description: "LongKeyPress is a custom React hook for detecting long key presses.",
+    mainDescription: "LongKeyPress is a custom React hook that detects when a key is pressed for a specified duration and then triggers a callback. It takes the target key, a callback function, and an optional custom delay as arguments.",
+    input: [{
+      name: "targetKey",
+      type: "string",
+      description: "The key to listen for long presses."
+    }, {
+      name: "callback",
+      type: "function",
+      description: "The callback function to be executed when the key is pressed for a long duration."
+    }, {
+      name: "customDelay",
+      type: "number",
+      description: "An optional custom delay in milliseconds for the long press duration. Default is 500 milliseconds."
+    }],
+    output: [{
+      name: "isPressing",
+      type: "boolean",
+      description: "A boolean value indicating whether the key is currently being pressed for a long duration."
+    }],
+    demoCode: `import React from 'react';
+    import { LongKeyPress } from './LongKeyPress'; // Assuming you've saved the function in a file named 'useKeyPress.js'
+    
+    function App() {
+      const handleLongPress = () => {
+        console.log('Long key press detected!');
+      };
   
+      const isPressing = LongKeyPress('a', handleLongPress, 1000);
+  
+      return (
+        <div>
+          <h1>Press and hold the 'a' key for 1 second</h1>
+          <p>Long key press detected: {isPressing ? 'Yes' : 'No'}</p>
+        </div>
+      );
+    }
+  
+    export default App;
+    `,
+  },
   
 ];
