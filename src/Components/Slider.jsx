@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "./use.png";
-import { Clipboard } from "usehoks/Hookes/Module3";
 import { Data } from "../Assets/Data";
 import { Link } from "react-router-dom";
+import { Clipboard } from "usehoks";
 export default function Slider() {
   const { copyToClipboard, copied } = Clipboard(1000);
   const copyClick = () => {

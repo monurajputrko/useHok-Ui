@@ -1,21 +1,20 @@
-import { Geolocation } from "usehoks";
+import { Notification } from "usehoks";
 
-const MyComponent = () => {
-  const {longitude,latitude,locationName,map} = Geolocation();
+
+export default function Calculator() {
+
   
-  console.log(locationName); // Getting The Address
-  console.log(longitude); // Getting The Longitude
-  console.log(latitude); // Getting The Latitude
-  console.log(map); // Getting The Map Link
+  // Notification("Hello", { body: "This is a notification" });
+
+  const show = ()=>{
+  }
 
   return (
-    <div>
-      <p>
-        Latitude: {latitude}, Longitude: {longitude}
-      </p>
-      <a href={map}>Go to Location</a>
+    <div className="container">
+    <h1>Hello World</h1>
+    <button onClick={()=>{
+           show();
+    }}>Click ME</button>
     </div>
   );
-};
-
-export default MyComponent;
+}

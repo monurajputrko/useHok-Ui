@@ -1506,7 +1506,7 @@ export const Data = [
           "An Error object containing the error message if the request fails.",
       },
       {
-        name: "fetchData",
+        name: "get",
         type: "function",
         description:
           "A function to fetch data from the specified URL with optional options.",
@@ -1544,7 +1544,7 @@ export const Data = [
                                                   
                                                     return (
                                                       <div>
-                                                        <button onClick={() => fetchData('https://api.example.com/data')}>
+                                                        <button onClick={() => get('https://api.example.com/data')}>
                                                           Fetch Data
                                                         </button>
                                                         <button onClick={() => post('https://api.example.com/data', { key: 'value' })}>

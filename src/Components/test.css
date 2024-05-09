@@ -1,4 +1,4 @@
-/*! CSS Used from: https://usehooks.com/_astro/404.4e91adfe.css */
+
 *,
 :before,
 :after {
@@ -334,7 +334,6 @@ nav:where(.astro-5JP7RTJD) a:where(.astro-5JP7RTJD):hover {
 	text-decoration: underline;
 }
 
-/*! CSS Used from: https://usehooks.com/_astro/index.93d72160.css */
 .ui-logo:where(.astro-TVRURPNS) {
 	display: inline-flex;
 	border-radius: 50%;
@@ -429,7 +428,6 @@ nav:where(.astro-5JP7RTJD) a:where(.astro-5JP7RTJD):hover {
 	animation-play-state: paused;
 }
 
-/*! CSS Used from: https://usehooks.com/_astro/_hook_.a5b546e8.css */
 .install:where(.astro-RYJLWM3K) {
 	width: 100%;
 	display: flex;
@@ -604,10 +602,3 @@ astro-island {
 	}
 }
 
-/*! CSS Used fontfaces */
-@font-face {
-	font-family: Fira Code;
-	font-style: normal;
-	font-weight: 400;
-	src: local(""), url(https://usehooks.com/fonts/firacode-regular.woff2) format("woff2");
-}

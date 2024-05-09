@@ -1,4 +1,4 @@
-/*! CSS Used from: https://usehooks.com/_astro/404.4e91adfe.css */
+
 *,
 :before,
 :after {
@@ -102,7 +102,6 @@ h3 {
 	line-height: 1.2;
 }
 
-/*! CSS Used from: https://usehooks.com/_astro/_hook_.f91524c9.css */
 main:where(.astro-PJ4Y3SZV) code {
 	background-color: var(--coal);
 }
@@ -161,10 +160,3 @@ main:where(.astro-PJ4Y3SZV) code {
 	min-width: 300px;
 }
 
-/*! CSS Used fontfaces */
-@font-face {
-	font-family: Fira Code;
-	font-style: normal;
-	font-weight: 400;
-	src: local(""), url(https://usehooks.com/fonts/firacode-regular.woff2) format("woff2");
-}

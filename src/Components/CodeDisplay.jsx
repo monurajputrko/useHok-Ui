@@ -6,8 +6,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useParams } from "react-router-dom";
 import { Data } from "../Assets/Data";
-import { Clipboard, Settitle } from "usehoks";
 import MainSection from "./MainSection";
+import { Clipboard, Settitle } from "usehoks";
 
 function CodeDisplay() {
   const [bool, setBool] = useState(false);
@@ -17,8 +17,7 @@ function CodeDisplay() {
 
   const filteredArray = Data.filter((obj) => obj.title === id);
   Settitle(`${id} - usehoks`)
-  const { copyToClipboard } = Clipboard
-  ();
+  const { copyToClipboard } = Clipboard();
   const copyClick = (text) => {
     setBool(true);
     copyToClipboard(text);
