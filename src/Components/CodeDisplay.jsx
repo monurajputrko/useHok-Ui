@@ -45,7 +45,7 @@ function CodeDisplay() {
 
   return (
     <div key={filteredArray[0].id}>
-      <Navbar />
+      <Navbar back={true} />
       <div 
         style={{
           display: "flex",

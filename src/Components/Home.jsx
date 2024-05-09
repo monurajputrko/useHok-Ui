@@ -10,7 +10,7 @@ export default function Home() {
   Settitle("usehoks");
   return (
     <div>
-      <Navbar />
+      <Navbar back={false} />
       <Slider />
       <Search />
       <Footer />
