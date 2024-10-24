@@ -104,7 +104,7 @@ function CodeDisplay() {
                 <tr>
                   <th>Name</th>
                   <th>Type</th>
-                  <th>Description</th>
+                  <th style={{textAlign:"left"}}>Description</th>
                 </tr>
               </thead>
               <tbody>
@@ -113,7 +113,7 @@ function CodeDisplay() {
                     <tr key={i}>
                       <td>{e.name}</td>
                       <td>{e.type}</td>
-                      <td>{e.description}</td>
+                      <td style={{textAlign:"left"}}>{e.description}</td>
                     </tr>
                   );
                 })}
@@ -130,7 +130,7 @@ function CodeDisplay() {
                 <tr>
                   <th>Name</th>
                   <th>Type</th>
-                  <th>Description</th>
+                  <th style={{textAlign:"left"}}>Description</th>
                 </tr>
               </thead>
               <tbody>
@@ -139,7 +139,7 @@ function CodeDisplay() {
                     <tr key={i}>
                       <td>{e.name}</td>
                       <td>{e.type}</td>
-                      <td>{e.description}</td>
+                      <td style={{textAlign:"left"}}>{e.description}</td>
                     </tr>
                   );
                 })}

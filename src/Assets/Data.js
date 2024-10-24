@@ -27,7 +27,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-      import { useDebounce } from './usehoks'; // Assuming you've saved the function in a file named 'debounceUtils.js'
+      import { useDebounce } from 'usehoks'; // Importing form useHoks
       
       function App() {
         const [value, setValue] = useState('');
@@ -81,7 +81,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-    import { setLocal } from './usehoks'; // Assuming you've saved the function in a file named 'localStorageUtils.js'
+    import { setLocal } from 'usehoks'; // Importing form useHoks
     
     function App() {
       const handleButtonClick = () => {
@@ -124,7 +124,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-    import { getLocal } from './usehoks'; // Assuming you've saved the function in a file named 'localStorageUtils.js'
+    import { getLocal } from 'usehoks'; // Importing form useHoks
     
     function App() {
       const handleButtonClick = () => {
@@ -173,7 +173,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-    import { useTimeout } from './usehoks'; // assuming the hook is in a file named useTimeout.js
+    import { useTimeout } from 'usehoks'; // Importing form useHoks
     
     const MyComponent = () => {
       const [count, setCount] = useState(0);
@@ -226,7 +226,7 @@ export const Data = [
     ],
 
     demoCode: `import React, { useState } from 'react';
-    import { useThrottle } from './usehoks'; // assuming the hook is in a file named useThrottle.js
+    import { useThrottle } from 'usehoks'; // Importing form useHoks
     
     const MyComponent = () => {
       const [count, setCount] = useState(0);
@@ -270,7 +270,7 @@ export const Data = [
     ],
 
     demoCode: `
-    import { removeLocal } from 'usehoks';
+    import { removeLocal } from 'usehoks'; // Importing form useHoks
     
     const MyComponent = () => {
       
@@ -311,7 +311,7 @@ export const Data = [
     ],
 
     demoCode: `
-    import { clearAllLocal } from 'usehoks';
+    import { clearAllLocal } from 'usehoks'; // Importing form useHoks
     
     const MyComponent = () => {
       
@@ -360,7 +360,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-      import { setSession } from './usehoks'; // Assuming you've saved the function in a file named 'sessionStorageUtils.js'
+      import { setSession } from 'usehoks'; // Importing form useHoks
       
       function App() {
         const handleButtonClick = () => {
@@ -404,7 +404,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-        import { getSession } from './usehoks'; // Assuming you've saved the function in a file named 'sessionStorageUtils.js'
+        import { getSession } from 'usehoks'; // Importing form useHoks
         
         function App() {
           const handleButtonClick = () => {
@@ -448,7 +448,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-          import { removeSession } from './usehoks'; // Assuming you've saved the function in a file named 'sessionStorageUtils.js'
+          import { removeSession } from 'usehoks'; // Importing form useHoks
           
           function App() {
             const handleButtonClick = () => {
@@ -490,7 +490,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-            import { clearAllSession } from './usehoks'; // Assuming you've saved the function in a file named 'sessionStorageUtils.js'
+            import { clearAllSession } from 'usehoks'; // Importing form useHoks
             
             function App() {
               const handleButtonClick = () => {
@@ -543,7 +543,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-              import { setCookie } from './usehoks'; // Assuming you've saved the function in a file named 'cookieUtils.js'
+              import { setCookie } from 'usehoks'; // Importing form useHoks
               
               function App() {
                 const handleButtonClick = () => {
@@ -588,7 +588,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-      import { getCookie } from './usehoks'; // Assuming you've saved the function in a file named 'cookieUtils.js'
+      import { getCookie } from 'usehoks'; // Importing form useHoks
       
       function App() {
         const handleButtonClick = () => {
@@ -631,7 +631,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-        import { eraseCookie } from './usehoks'; // Assuming you've saved the function in a file named 'cookieUtils.js'
+        import { eraseCookie } from 'usehoks'; // Importing form useHoks
         
         function App() {
           const handleButtonClick = () => {
@@ -675,7 +675,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-          import { useMediaQuery } from './usehoks'; // Assuming you've saved the function in a file named 'mediaQueryUtils.js'
+          import { useMediaQuery } from 'usehoks'; // Importing form useHoks
           
           function App() {
             const isLargeScreen = useMediaQuery('(min-width: 768px)');
@@ -708,7 +708,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-            import { isOnline } from './usehoks'; // Assuming you've saved the function in a file named 'onlineStatusUtils.js'
+            import { isOnline } from 'usehoks'; // Importing form useHoks
             
             function App() {
               const isOnline = isOnline();
@@ -747,7 +747,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-              import { Settitle } from './usehoks'; // Assuming you've saved the function in a file named 'documentTitleUtils.js'
+              import { Settitle } from 'usehoks'; // Importing form useHoks
               
               function App() {
                 Settitle('New Title');
@@ -786,7 +786,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                import { setFavicon } from './usehoks'; // Assuming you've saved the function in a file named 'faviconUtils.js'
+                import { setFavicon } from 'usehoks'; // Importing form useHoks
                 
                 function App() {
                   setFavicon('https://example.com/favicon.ico');
@@ -832,7 +832,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                  import { KeyPress } from './usehoks'; // Assuming you've saved the function in a file named 'keyPressUtils.js'
+                  import { KeyPress } from 'usehoks'; // Importing form useHoks
                   
                   function App() {
                     KeyPress('Enter', () => {
@@ -867,7 +867,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                    import { LazyLoad } from './usehoks'; // Assuming you've saved the function in a file named 'lazyLoadUtils.js'
+                    import { LazyLoad } from 'usehoks'; // Importing form useHoks
                     
                     function App() {
                       const isVisible = LazyLoad();
@@ -914,7 +914,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useRef } from 'react';
-                      import { ClickOutside } from './usehoks'; // Assuming you've saved the function in a file named 'clickOutsideUtils.js'
+                      import { ClickOutside } from 'usehoks'; // Importing form useHoks
                       
                       function App() {
                         const ref = useRef(null);
@@ -951,7 +951,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                        import { OnHover } from './usehoks'; // Assuming you've saved the function in a file named 'hoverUtils.js'
+                        import { OnHover } from 'usehoks'; // Importing form useHoks
                         
                         function App() {
                           const isHovered = OnHover();
@@ -983,7 +983,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                          import { isScroll } from './usehoks'; // Assuming you've saved the function in a file named 'scrollPositionUtils.js'
+                          import { isScroll } from 'usehoks'; // Importing form useHoks
                           
                           function App() {
                             const scrollPosition = isScroll();
@@ -1015,10 +1015,10 @@ export const Data = [
           "A function that can be used to get the current geolocation information. It returns an object containing latitude, longitude, location name, map URL, and error message.",
       },
     ],
-    demoCode: `import { Geolocation } from "usehoks";
+    demoCode: `import { Geolocation } from "usehoks"; // Importing form useHoks
 
     const MyComponent = () => {
-      const {longitude,latitude,locationName,map} = Geolocation(); Assuming you've saved the function in a file named 'Geolocation'
+      const {longitude,latitude,locationName,map} = Geolocation(); 
       
       console.log(locationName); // Getting The Address
       console.log(longitude); // Getting The Longitude
@@ -1068,7 +1068,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-                              import { Clipboard } from './usehoks'; // Assuming you've saved the function in a file named 'clipboardUtils.js'
+                              import { Clipboard } from 'usehoks'; // Importing form useHoks
                               
                               function App() {
                                 const [textToCopy, setTextToCopy] = useState('');
@@ -1107,7 +1107,7 @@ export const Data = [
     ],
     output: [],
     demoCode: `import React from 'react';
-                                import { Script } from './usehoks'; // Assuming you've saved the function in a file named 'scriptUtils.js'
+                                import { Script } from 'usehoks'; // Importing form useHoks
                                 
                                 function App() {
                                   Script('https://example.com/script.js');
@@ -1145,7 +1145,7 @@ export const Data = [
     ],
     output: [],
     demoCode: `import React from 'react';
-                                  import { useNotification } from './usehoks'; // Assuming you've saved the function in a file named 'notificationUtils.js'
+                                  import { useNotification } from 'usehoks'; // Importing form useHoks
                                   
                                   function App() {
                                     useNotification('New message', { body: 'You have a new message!' });
@@ -1184,7 +1184,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                    import { FullScreen } from './usehoks'; // Assuming you've saved the function in a file named 'fullScreenUtils.js'
+                                    import { FullScreen } from 'usehoks'; // Importing form useHoks
                                     
                                     function App() {
                                       const { isFullScreen, toggleFullScreen } = FullScreen();
@@ -1229,7 +1229,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                      import { useGeofence } from './usehoks'; // Assuming you've saved the function in a file named 'geofenceUtils.js'
+                                      import { useGeofence } from 'usehoks'; // Importing form useHoks
                                       
                                       function App() {
                                         const geofenceCoordinates = { latitude: 37.7749, longitude: -122.4194 };
@@ -1269,7 +1269,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useRef } from 'react';
-                                        import { QRCodeScanner } from './usehoks'; // Assuming you've saved the function in a file named 'qrCodeScannerUtils.js'
+                                        import { QRCodeScanner } from 'usehoks'; // Importing form useHoks
                                         
                                         function App() {
                                           const { scannedQRCode, videoRef } = QRCodeScanner();
@@ -1303,7 +1303,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                          import { ScreenOrientation } from './usehoks'; // Assuming you've saved the function in a file named 'screenOrientationUtils.js'
+                                          import { ScreenOrientation } from 'usehoks'; // Importing form useHoks
                                           
                                           function App() {
                                             const orientation = ScreenOrientation();
@@ -1347,7 +1347,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                            import { QRCodeGenerator } from './usehoks'; // Assuming you've saved the function in a file named 'qrCodeGeneratorUtils.js'
+                                            import { QRCodeGenerator } from 'usehoks'; // Importing form useHoks
                                             
                                             function App() {
                                               const data = 'Example Data';
@@ -1393,7 +1393,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                              import { QRCodeGenerator } from './usehoks'; // Assuming you've saved the function in a file named 'qrCodeGeneratorUtils.js'
+                                              import { QRCodeGenerator } from 'usehoks'; // Importing form useHoks
                                               
                                               function App() {
                                                 const data = 'Example Data';
@@ -1439,7 +1439,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-                                                import { useWebSocket } from './usehoks'; // Assuming you've saved the function in a file named 'webSocketUtils.js'
+                                                import { useWebSocket } from 'usehoks'; // Importing form useHoks
                                                 
                                                 function App() {
                                                   const url = 'ws://localhost:8080';
@@ -1537,7 +1537,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                                  import { Fetcher } from './usehoks'; // Assuming you've saved the function in a file named 'fetcherUtils.js'
+                                                  import { Fetcher } from 'usehoks'; // Importing form useHoks
                                                   
                                                   function App() {
                                                     const { data, loading, error, fetchData, post, put, patch, Delete } = Fetcher();
@@ -1587,7 +1587,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                                    import { PageVisibility } from './usehoks'; // Assuming you've saved the function in a file named 'pageVisibilityUtils.js'
+                                                    import { PageVisibility } from 'usehoks'; // Importing form useHoks
                                                     
                                                     function App() {
                                                       const isVisible = PageVisibility();
@@ -1627,7 +1627,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                                      import { IdleTimer } from './usehoks'; // Assuming you've saved the function in a file named 'idleTimerUtils.js'
+                                                      import { IdleTimer } from 'usehoks'; // Importing form useHoks
                                                       
                                                       function App() {
                                                         const isIdle = IdleTimer(5000); // Set timeout to 5 seconds
@@ -1691,7 +1691,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-                                                        import { useForm } from './usehoks'; // Assuming you've saved the function in a file named 'formUtils.js'
+                                                        import { useForm } from 'usehoks'; // Importing form useHoks
                                                         
                                                         function App() {
                                                           const { values, errors, handleChange, handleSubmit } = useForm(
@@ -1762,7 +1762,7 @@ export const Data = [
     ],
     output: [],
     demoCode: `import React from 'react';
-                                                          import { useEventListener } from './usehoks'; // Assuming you've saved the function in a file named 'eventListenerUtils.js'
+                                                          import { useEventListener } from 'usehoks'; // Importing form useHoks
                                                           
                                                           function App() {
                                                             const handleResize = () => {
@@ -1811,7 +1811,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-                                                            import { useCaptcha } from './useCaptcha'; // Assuming you've saved the function in a file named 'captchaUtils.js'
+                                                            import { useCaptcha } from 'usehoks'; // Importing form useHoks
                                                             
                                                             function App() {
                                                               const { captcha, regenerateCaptcha, validateCaptcha } = useCaptcha();
@@ -1897,7 +1897,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-    import { usePagination } from './usePagination'; // Assuming you've saved the function in a file named 'paginationUtils.js'
+    import { usePagination } from 'usehoks'; // Importing form useHoks
     
     function App() {
       const totalItems = 100; // Total number of items
@@ -1955,7 +1955,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-    import { useModal } from './useModal'; // Assuming you've saved the function in a file named 'modalUtils.js'
+    import { useModal } from 'usehoks'; // Importing form useHoks
     
     function App() {
       const { isOpen, openModal, closeModal } = useModal();
@@ -2028,7 +2028,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useState } from 'react';
-    import { useCountdown } from './useCountdown'; // Assuming you've saved the function in a file named 'countdownUtils.js'
+    import { useCountdown } from 'usehoks'; // Importing form useHoks
     
     function CountdownTimer() {
       const [targetDate, setTargetDate] = useState(new Date());
@@ -2087,7 +2087,7 @@ export const Data = [
       },
     ],
     demoCode: `import React, { useRef } from 'react';
-    import { getFormValues } from './usehoks'; // Assuming you've saved the function in a file named 'formUtils.js'
+    import { getFormValues } from 'usehoks'; // Importing form useHoks
     
     function FormComponent() {
       const { formRef, getValues } = getFormValues();
@@ -2153,7 +2153,7 @@ export const Data = [
       },
     ],
     demoCode: `import React from 'react';
-    import { LongKeyPress } from './LongKeyPress'; // Assuming you've saved the function in a file named 'useKeyPress.js'
+    import { LongKeyPress } from 'usehoks'; // Importing form useHoks
     
     function App() {
       const handleLongPress = () => {
