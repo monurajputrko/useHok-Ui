@@ -1,3 +1,5 @@
+import { type } from "@testing-library/user-event/dist/type";
+
 export const Data = [
   {
     id: "1",
@@ -1849,9 +1851,9 @@ export const Data = [
       "usePagination is a custom React hook that helps manage pagination state for a list of items. It takes the total number of items and the number of items per page as input and returns the current page number, total number of pages, functions to navigate to the next and previous pages, and a function to go to a specific page. It also provides boolean values indicating whether there is a next or previous page.",
     input: [
       {
-        name: "totalItems",
-        type: "number",
-        description: "The total number of items in the list.",
+        name: "items",
+        type: "Array of Obj",
+        description: "Total items that need to Paginated",
       },
       {
         name: "itemsPerPage",
@@ -1895,39 +1897,38 @@ export const Data = [
         type: "boolean",
         description: "Indicates whether there is a previous page.",
       },
+      {
+        name:"currentItems",
+        type:"Array of Obj",
+        description:"The items for the current page"
+      }
     ],
-    demoCode: `import React, { useState } from 'react';
-    import { usePagination } from 'usehoks'; // Importing form useHoks
-    
-    function App() {
-      const totalItems = 100; // Total number of items
-      const itemsPerPage = 10; // Number of items per page
-      const { currentPage, totalPages, nextPage, prevPage, goToPage, hasNextPage, hasPrevPage } = usePagination(totalItems, itemsPerPage);
-    
-      return (
-        <div>
-          <ul>
-            {/* Render items for the current page */}
-            {Array.from({ length: itemsPerPage }, (_, index) => (
-              <li key={index}>Item {((currentPage - 1) * itemsPerPage) + index + 1}</li>
-            ))}
-          </ul>
-          <div>
-            {/* Pagination controls */}
-            <button disabled={!hasPrevPage} onClick={prevPage}>Previous</button>
-            <span>Page {currentPage} of {totalPages}</span>
-            <button disabled={!hasNextPage} onClick={nextPage}>Next</button>
-          </div>
-          <div>
-            {/* Go to specific page */}
-            <input type="number" min="1" max={totalPages} value={currentPage} onChange={(e) => goToPage(parseInt(e.target.value, 10))} />
-            <button onClick={() => goToPage(currentPage)}>Go</button>
-          </div>
-        </div>
-      );
-    }
-    
-    export default App;
+    demoCode: `
+import UserData from './data.js';
+import { usePagination } from 'usehoks';
+
+function PaginatedComponent() {
+  const itemsPerPage = 10;
+  const { currentPage, totalPages, nextPage, prevPage, goToPage, hasNextPage, hasPrevPage, currentItems } = usePagination(UserData, itemsPerPage);
+
+  return (
+    <div>
+      <ul>
+        {currentItems.map(item => (
+          <li key={item.id}>{item.username}</li>
+        ))}
+      </ul>
+      <div>
+        <button disabled={!hasPrevPage} onClick={prevPage}>Previous</button>
+        <span>Page {currentPage} of {totalPages}</span>
+        <button disabled={!hasNextPage} onClick={nextPage}>Next</button>
+      </div>
+    </div>
+  );
+}
+
+export default PaginatedComponent;
+
     `,
   },
   {
