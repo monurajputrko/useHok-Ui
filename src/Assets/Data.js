@@ -2226,32 +2226,48 @@ export default PaginatedComponent;
       }
     ],
     demoCode: `import React, { useState } from 'react';
-import { generatedKey, encryptData, decryptData } from 'usehoks';  // Importing from usehoks
+import {generatedKey, encryptData, decryptData } from 'usehoks';  // Importing from usehoks
 
 function App() {
     const [inputText, setInputText] = useState('');
     const [encryptedData, setEncryptedData] = useState(null);
     const [decryptedData, setDecryptedData] = useState(null);
-    const [key, setKey] = useState(null); 
+    const [key, setKey] = useState(null);
     const [iv, setIv] = useState(null);
 
-    const handleEncrypt = async () => {
-        const newKey = await generatedKey();  // Generate the key
-        setKey(newKey);  // Store the generated key
 
-        const { encryptedData: encData, iv: newIv } = await encryptData(inputText, newKey);
-        setEncryptedData(encData);
-        setIv(newIv);
+    const handleEncrypt = async () => {
+        try {
+            // Ensure generatedKey is being used correctly
+            const newKey = await generatedKey();  
+
+            // Store the key for decryption
+            setKey(newKey);
+
+            // Encrypt the data
+            const { encryptedData: encData, iv: newIv } = await encryptData(inputText, newKey);
+            setEncryptedData(encData);
+            setIv(newIv);
+
+            // Optionally store the encrypted data in secure cookies or localStorage here
+        } catch (error) {
+            console.error("Error during encryption:", error);
+        }
     };
 
     const handleDecrypt = async () => {
-        if (!encryptedData || !iv || !key) {  // Check for key as well
-            console.warn("No encrypted data, IV, or key found.");
-            return;
-        }
+        try {
+            if (!encryptedData || !iv || !key) {
+                console.warn("No encrypted data, IV, or key found.");
+                return;
+            }
 
-        const decrypted = await decryptData(encryptedData, key, iv);
-        setDecryptedData(decrypted);  // Ensure this is a string
+            const decrypted = await decryptData(encryptedData, key, iv);
+            console.log("decrypted ", decrypted);
+            setDecryptedData(decrypted);  
+        } catch (error) {
+            console.error("Error during decryption:", error);
+        }
     };
 
     return (
@@ -2264,11 +2280,9 @@ function App() {
                 placeholder="Enter text to encrypt"
             />
             <button onClick={handleEncrypt}>Encrypt</button>
+            <br />
             <button onClick={handleDecrypt}>Decrypt</button>
-            <div>
-                <h3>Encrypted Data:</h3>
-                <p>{encryptedData ? encryptedData : "No data encrypted"}</p>
-            </div>
+           
             <div>
                 <h3>Decrypted Data:</h3>
                 <p>{decryptedData || "No data decrypted"}</p>
@@ -2277,7 +2291,8 @@ function App() {
     );
 }
 
-export default App;`
+export default App;
+`
 }
 
 ];
